@@ -1,0 +1,33 @@
+*
+{
+  font-family: Arial;
+}
+
+h1
+{
+  background-color:  yellow;
+  border: 3px dashed red;
+}
+h2{
+  color: blue;
+    border: 3px dashed blue;
+}
+
+table{
+      border-collapse: collapse;
+      border: 2px solid;
+      border-color: red;
+      letter-spacing: 1px;
+      font-size: 0.8rem;
+}
+td, th {
+      border: 1px solid;
+      border-color: red;
+      padding: 10px 20px;
+    }
+input, textarea{
+  border: 3px dashed red;
+}
+label{
+  color: blue;
+}
