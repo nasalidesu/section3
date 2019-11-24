@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="style.css">
+<script src="jj.js">
+
+</script>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  height: 100px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h2 {
+    position: center;
+}
+
+</style>
+
+</head>
+<body>
+
+<h2 >Snake and Ladder</h2>
+<div class="boards">
+
+  <div class="row">
+    <div class="column" style="background-color:#aaa;">
+      <h2>21</h2>
+      <p class="positionP1"></p>
+      <p class="positionP2"></p>
+
+    </div>
+    <div class="column" style="background-color:#ccc;">
+      <h2>22</h2>
+      <p class="positionP1"></p>
+      <p class="positionP2"></p>
+
+    </div>
+
+    <div class="column" style="background-color:#aaa;">
+      <h2>23</h2>
+      <p>Back to 16</p>
+      <p class="positionP1"></p>
+      <p class="positionP2"></p>
+
+    </div>
+    <div class="column" style="background-color:#ccc;">
+      <h2>24</h2>
+      <p class="positionP1"></p>
+      <p class="positionP2"></p>
+
+    </div>
+    <div class="column" style="background-color:#aaa;">
+      <h2>25</h2>
+      <p class="positionP1"></p>
+      <p class="positionP2"></p>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column" style="background-color:#ccc;">
+      <h2>16</h2>
+      <p class="positionP1"></p>
+      <p class="positionP2"></p>
+
+    </div>
+    <div class="column" style="background-color:#aaa;">
+      <h2>17</h2>
+      <p class="positionP1"></p>
+      <p class="positionP2"></p>
+
+    </div>
+    <div class="column" style="background-color:#ccc;">
+      <h2>18</h2>
+      <p class="positionP1"></p>
+      <p class="positionP2"></p>
+
+    </div>
+    <div class="column" style="background-color:#aaa;">
+      <h2>19</h2>
+      <p>LADDER to 24.</p>
+      <p class="positionP1"></p>
+      <p class="positionP2"></p>
+
+    </div>
+    <div class="column" style="background-color:#ccc;">
+      <h2>20</h2>
+      <p class="positionP1"></p>
+      <p class="positionP2"></p>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column" style="background-color:#aaa;">
+      <h2>11</h2>
+      <p class="positionP1"></p>
+      <p class="positionP2"></p>
+
+    </div>
+    <div class="column" style="background-color:#ccc;">
+      <h2>12</h2>
+      <p class="positionP1"></p>
+      <p class="positionP2"></p>
+
+    </div>
+    <div class="column" style="background-color:#aaa;">
+      <h2>13</h2>
+      <p class="positionP1"></p>
+      <p class="positionP2"></p>
+
+    </div>
+    <div class="column" style="background-color:#ccc;">
+      <h2>14</h2>
+      <p class="positionP1"></p>
+      <p class="positionP2"></p>
+
+    </div>
+    <div class="column" style="background-color:#aaa;">
+      <h2>15</h2>
+      <p>Back to 5.</p>
+      <p class="positionP1"></p>
+      <p class="positionP2"></p>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column" style="background-color:#ccc;">
+      <h2>6</h2>
+      <p class="positionP1"></p>
+      <p class="positionP2"></p>
+
+    </div>
+    <div class="column" style="background-color:#aaa;">
+      <h2>7</h2>
+      <p class="positionP1"></p>
+      <p class="positionP2"></p>
+
+    </div>
+    <div class="column" style="background-color:#ccc;">
+      <h2>8</h2>
+      <p>LADDER to 15.</p>
+      <p class="positionP1"></p>
+      <p class="positionP2"></p>
+
+    </div>
+    <div class="column" style="background-color:#aaa;">
+      <h2>9</h2>
+      <p class="positionP1"></p>
+      <p class="positionP2"></p>
+
+    </div>
+    <div class="column" style="background-color:#ccc;">
+      <h2>10</h2>
+      <p class="positionP1"></p>
+      <p class="positionP2"></p>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column" style="background-color:#aaa;">
+      <h2>1</h2>
+      <p class="positionP1" ></p>
+      <p class="positionP2"></p>
+
+    </div>
+    <div class="column" style="background-color:#ccc;">
+      <h2>2</h2>
+      <p class="positionP1"></p>
+      <p class="positionP2"></p>
+
+
+    </div>
+    <div class="column" style="background-color:#aaa;">
+      <h2>3</h2>
+      <p class="positionP1"></p>
+      <p class="positionP2"></p>
+
+    </div>
+    <div class="column" style="background-color:#ccc;">
+      <h2>4</h2>
+      <p class="positionP1"></p>
+      <p class="positionP2"></p>
+
+    </div>
+    <div class="column" style="background-color:#aaa;">
+      <h2>5</h2>
+      <p class="positionP1"></p>
+      <p class="positionP2"></p>
+
+    </div>
+  </div><br>
+
+
+
+
+
+<p></p>
+
+  <div class="container-dice">
+    <div class="block-container">
+    <button type="button" onclick="rollDice();" class="btn btn-primary">player 1</button>
+    </div>
+    <div class="box-dice1">
+
+    <!--<div id="dice"></div>-->
+      <img id="dice" class="dice" src="https://openclipart.org/download/282127/Die/1.svg">
+    </div>
+
+    
+    <div class="block-container2">
+    <button type="button" onclick="rollDice2();" class="btn btn-primary2">player 2</button>
+    </div>
+    <div class="box-dice2">
+
+    <!--<div id="dice"></div>-->
+      <img id="dice2" class="dice2" src="https://openclipart.org/download/282127/Die/1.svg">
+    </div>
+  </div>
+
+  <div class="" id="display1">
+    player 1 got
+
+  </div>
+<br>
+<div class="" id="displaycurrent1">
+  player 1 position =
+
+</div>
+<div class="" id="display2">
+  player 2 got
+
+</div>
+<br>
+<div class="" id="displaycurrent2">
+player 2 position =
+
+</div>
+</div>
+
+</body>
+
+</html>

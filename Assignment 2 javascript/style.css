@@ -1,0 +1,49 @@
+.boards{
+  position: absolute;
+  width: 800px;
+  height: 850px;
+  background-color: grey;
+  margin: 50px;
+  border: 2px;
+  border-color: black;
+  border-style: solid;
+
+}
+.box-dice1 {
+  margin-top:10px;
+  width: 100px;
+
+}
+
+.block-container {
+
+  float:left;
+}
+
+.dice {
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: 10px;
+  width:50px;
+  height:50px;
+
+}
+.box-dice2 {
+  margin-top:10px;
+  width: 100px;
+
+}
+
+.block-container2{
+
+  float:left;
+}
+
+.dice2 {
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: 10px;
+  width:50px;
+  height:50px;
+
+}
